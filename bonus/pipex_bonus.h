@@ -6,19 +6,21 @@
 /*   By: asayad <asayad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 13:27:42 by asayad            #+#    #+#             */
-/*   Updated: 2024/06/22 14:29:39 by asayad           ###   ########.fr       */
+/*   Updated: 2025/12/26 01:05:33 by asayad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PIPEX_BONUS_H
 # define PIPEX_BONUS_H
 
-# include "libc.h"
 # include <sys/wait.h>
 # include <unistd.h>
 # include <errno.h>
 # include <stdlib.h>
 # include <stdbool.h>
+# include <stdio.h>
+# include <fcntl.h>
+# include <string.h>
 
 typedef struct input
 {

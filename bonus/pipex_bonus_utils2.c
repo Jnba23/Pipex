@@ -6,7 +6,7 @@
 /*   By: asayad <asayad@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 21:51:22 by asayad            #+#    #+#             */
-/*   Updated: 2024/06/21 23:59:25 by asayad           ###   ########.fr       */
+/*   Updated: 2025/12/26 01:05:17 by asayad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	file_opening_b(int ac, t_fds *fds, char **av)
 {
-	fds->here_doc = FALSE;
+	fds->here_doc = false;
 	if (!ft_strncmp_b("here_doc", av[1], ft_strlen_b(av[1])))
 		here_doc_files(ac, fds, av);
 	else
@@ -40,7 +40,7 @@ void	here_doc_files(int ac, t_fds *fds, char **av)
 		fds->fd_in_out[1] = open(av[ac - 1], O_CREAT | O_RDWR | O_APPEND, 0644);
 		if (fds->fd_in_out[1] == -1)
 			return (perror("Error outfile "), exit(EXIT_FAILURE));
-		fds->here_doc = TRUE;
+		fds->here_doc = true;
 	}
 	else
 		return (perror("Here doc few args "), exit(EXIT_FAILURE));

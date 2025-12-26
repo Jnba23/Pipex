@@ -3,8 +3,8 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCM = pipex.c pipex_utils.c pipex_utils1.c pipex_utils2.c ft_split.c ft_split_cpy.c ft_split_cpy_utils.c ft_strjoin.c \
-		ft_strlcat.c \
+SRCM = ./man/pipex.c ./man/pipex_utils.c ./man/pipex_utils1.c ./man/pipex_utils2.c ./man/ft_split.c ./man/ft_split_cpy.c ./man/ft_split_cpy_utils.c ./man/ft_strjoin.c \
+		./man/ft_strlcat.c \
 
 OBJM = $(SRCM:%.c=%.o)
 
